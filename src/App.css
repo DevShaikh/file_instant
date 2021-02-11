@@ -1,0 +1,688 @@
+:root {
+  --blue: #0d6efd;
+  --light: #eeeeee;
+  --yellow: #ffd400;
+  --orange: #ff7c00;
+  --green: rgb(25, 184, 25);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("./back-texture.jpg");
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+/* BASIC CLASSES */
+.bg_yellow {
+  background: #ffd400;
+  color: #000;
+}
+/* === END HERE === */
+
+/* NAVBAR CSS */
+.logo {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.add_top img {
+  width: 100%;
+}
+.nav {
+  border-radius: 10px;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.menu ul {
+  display: flex;
+}
+.menu ul li a {
+  padding: 0px 12px;
+  margin: 12px 0px;
+  border-right: 1px solid #bbbbbb;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffffff;
+}
+.menu ul li:last-child a {
+  border-right: none;
+}
+.menu ul li a:hover {
+  color: #fff;
+}
+
+.searchBox {
+  background: none;
+  border: none;
+  outline: none;
+  color: #000;
+}
+.searchBar {
+  display: flex;
+  align-items: center;
+}
+.searchBar .form-group {
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 2px 10px;
+}
+
+/* === END HERE === */
+
+/* HOME AREA CSS */
+#home_page {
+  background: #fff;
+  padding: 20px 15px;
+}
+.addvertisement {
+  border: 2px solid #bbbbbb;
+}
+.addvertisement h4 {
+  margin: 0;
+  padding: 6px 0px;
+  margin-bottom: 2px;
+}
+.addvertisement img {
+  padding: 0px 2px;
+}
+.follow_us {
+  border: 1px solid #bbb;
+}
+.follow_us h5 {
+  padding: 8px;
+  text-transform: uppercase;
+  background: var(--blue);
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  margin: 0;
+}
+.follow_us_content {
+  padding: 10px 0px;
+}
+.follow_us_likes {
+  display: flex;
+  justify-content: space-around;
+}
+.follow_us_likes p {
+  border: 1px solid #bbb;
+  width: 45px;
+  text-align: center;
+  font-size: 14px;
+  padding: 2px 4px;
+}
+.follow_us_btns {
+  display: flex;
+  justify-content: space-around;
+}
+.follow_us_btns button {
+  border: none;
+  background: linear-gradient(to bottom, #fff, #bbb);
+  width: 30%;
+}
+.sponser_ads h5 {
+  padding: 8px;
+  text-transform: uppercase;
+  background: #464646;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  margin: 0;
+}
+
+.sponser_ads {
+  border: 1px solid #bbb;
+}
+.sponser_ads_box {
+  width: 90%;
+  height: 120px;
+  background: #bbb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px auto;
+}
+
+.latest_softwares {
+  background: #ffd400;
+  padding: 15px 10px;
+}
+.latest_title h5 {
+  background: #fff;
+  display: inline-block;
+  padding: 5px 20px;
+  margin: 0;
+  border-radius: 8px 8px 0px 0px;
+  text-transform: uppercase;
+}
+.latest-content {
+  background: #fff;
+  padding: 10px 10px;
+  border-radius: 0px 8px 8px 8px;
+  box-shadow: 0px 8px 6px -8px #000;
+}
+.latest-content ul li {
+  display: flex;
+  text-transform: uppercase;
+  margin: 10px 0px;
+}
+.latest-content ul li img {
+  width: 6%;
+  margin-right: 5px;
+}
+.latest-content ul li a {
+  margin-right: 5px;
+}
+.latest-view-btn {
+  display: block;
+  text-align: right;
+  color: #000;
+}
+
+.softwares {
+  padding: 15px 0px;
+}
+.softwareBox {
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px -4px #000;
+}
+.software_title {
+  background: var(--blue);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 8px 8px 0px 0px;
+  text-transform: uppercase;
+}
+.softwareBox {
+  background: var(--light);
+}
+.softwareBox ul {
+  padding: 0 10px 10px 10px;
+}
+.softwareBox ul li {
+  margin: 2px 0px;
+}
+.softwareBox ul li a {
+  color: #000;
+  font-size: 14px;
+}
+.softwareBox ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #ffd400; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: 0em; /* Also needed for space (tweak if needed) */
+}
+.card-footer {
+  display: flex;
+}
+.card-footer p {
+  margin: 0 10px;
+}
+.add_bottom {
+  border: 1px solid #bbb;
+  padding: 2px;
+}
+.add_bottom img {
+  width: 100%;
+}
+/* === END HERE === */
+
+/* FOOTER CSS */
+footer {
+  background-color: #fff;
+  padding: 8px 0;
+  margin-top: 30px;
+}
+
+.footer-menu ul {
+  display: flex;
+}
+.footer-menu ul li a {
+  padding: 0px 12px;
+  margin: 12px 0px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #000a;
+}
+.footer-search {
+  border: 1px solid #bbb;
+}
+.footer-copyright {
+  padding: 0px 18px;
+  color: #bbb;
+  margin: 0;
+}
+
+/* === END HERE === */
+
+/* WIDGET CSS */
+#widget {
+  background: #fff;
+  padding: 20px 20px;
+}
+.widget_title {
+  padding: 10px 20px;
+  background: var(--light);
+  box-shadow: 0px 0px 4px 1px #bbb;
+}
+.widget_title h4 {
+  color: var(--blue);
+}
+.widget_content {
+  display: flex;
+  padding: 20px 20px;
+}
+.widget_field {
+  margin: 14px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.widget_field label {
+  width: 150px;
+}
+.widget_field input,
+.widget_field select,
+.widget_field .color {
+  background: linear-gradient(0deg, #2b81ff, #8dbbff);
+  color: #fff;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  width: 40%;
+}
+.widget_field .color {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.widget_field .color input {
+  padding: 0;
+  width: 65%;
+  text-transform: uppercase;
+}
+.widget_field .color input:last-child {
+  width: 25%;
+}
+.widget_field select option {
+  color: #000;
+}
+.widget_field input[type="checkbox"] {
+  margin-right: auto;
+  margin-left: auto;
+}
+.corner input:last-child {
+  width: 80px !important;
+}
+
+.widget_preview {
+  padding: 20px;
+  width: 70%;
+}
+.widget_preview h4 {
+  background: var(--blue);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: 0px 0px 2px 0px #000;
+  margin: 0;
+}
+.latest_download_content {
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 0px #000;
+}
+.latest_download_content ul {
+  background: #eeeeee;
+  padding: 10px 10px;
+}
+.latest_download_content ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.latest_download_content ul li:last-child {
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+.latest_download_content ul li img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.latest_download_content ul li a {
+  color: #000;
+}
+.widget_code_area h4 {
+  color: var(--blue);
+}
+.widget_code {
+  overflow-y: scroll;
+  color: #fff;
+  background: #2f2f2f;
+  height: 250px;
+  padding: 10px 20px;
+}
+.widget_code::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.widget_code::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.widget_code::-webkit-scrollbar-thumb {
+  background: #888;
+  width: 10px;
+}
+
+/* Handle on hover */
+.widget_code::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.widget-add {
+  width: 80%;
+  margin: 20px auto;
+}
+/* === END HERE === */
+
+/* DOWNLOAD CSS */
+
+#download {
+  background: #fff;
+  padding: 15px;
+}
+.download_title {
+  display: flex;
+}
+.download_title img {
+  width: 6%;
+  margin-right: 10px;
+}
+.download_title_desc > * {
+  margin: 0;
+}
+.download_menu {
+  background: var(--yellow);
+  border-radius: 5px 5px 0px 0px;
+}
+.download_menu ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px;
+  padding-bottom: 0;
+}
+.download_menu ul li {
+  cursor: pointer;
+  padding: 10px 8px;
+  border-radius: 5px 5px 0px 0px;
+}
+.download_menu .download_active {
+  background: #fff;
+}
+.download_details {
+  border: 1px solid #bbb;
+  border-top: none;
+  padding: 15px;
+}
+.download_versions {
+  border: 1px solid #bbba;
+  border-radius: 5px 5px 0px 0px;
+}
+.download_btn {
+  display: flex;
+  align-items: center;
+  background: #dfdfdfaa;
+  padding: 5px 10px;
+  color: #3d3d3d;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.download_btn svg {
+  fill: var(--green);
+  margin-right: 5px;
+}
+.download_latest_version {
+  background: #dfdfdfaa;
+  padding: 5px 10px;
+}
+.download_versions_list {
+  padding: 5px 10px;
+}
+.download_screenshots img {
+  width: 100%;
+  box-shadow: 0 0 6px -2px #000;
+}
+.download_technical tr {
+  line-height: 30px;
+}
+.download_share_buttons {
+  text-align: center;
+}
+.download_share_btn {
+  outline: none !important;
+}
+.download_share_btn svg {
+  color: #fff !important;
+  border-radius: 50px;
+  box-shadow: 0px 2px 8px -2px #000;
+  margin: 0px 10px;
+}
+/* === END HERE === */
+
+/* DOWNLOAD WAIT CSS */
+
+.downloadWait {
+  padding: 15px;
+  background: #ffffff;
+}
+.download_loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.download_loader svg {
+  fill: var(--green);
+  transform: scale(1.5);
+  margin: 15px 20px;
+}
+.download_loader h1 {
+  color: #001ce2;
+}
+.download_loading_bar {
+  width: 30%;
+  margin-left: 30px;
+  overflow: hidden;
+}
+.download_loading_bar img {
+  width: 500px;
+  position: relative;
+  left: -160px;
+  height: 30px;
+  animation: loader 1s infinite;
+}
+.download_loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0px;
+  background: #eaeaea;
+  border: 1px solid #ccc;
+}
+@keyframes loader {
+  from {
+    left: -160px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+.other_programs {
+  background: #dcdcdc;
+}
+.other_programs h4 {
+  background: var(--orange);
+  color: #fff;
+  padding: 10px 20px;
+}
+.other_programs_area {
+  padding: 0px 10px;
+}
+.other_program_box {
+  padding: 20px 5px;
+}
+.other_program_box img {
+  width: 30px;
+}
+.other_program_box td {
+  padding: 0px 8px;
+}
+.other_program_box td a {
+  margin-top: 10px;
+  background: linear-gradient(0deg, #fff, #cecece, #fff);
+  color: #000;
+  padding: 5px 23px;
+}
+/* === END HERE === */
+
+/* DOWNLOAD LIST CSS */
+
+.download_list {
+  background: #fff;
+  padding: 20px;
+}
+.download_category {
+  border-radius: 5px;
+  background: #f8f8f8;
+  box-shadow: 1px 5px 12px 0 #afafaf;
+}
+.download_category h5 {
+  background: var(--yellow);
+  padding: 5px 10px;
+  margin: 0;
+  border-radius: 5px 5px 0px 0px;
+}
+.download_category ul {
+  padding: 10px 13px;
+}
+.download_category ul li svg {
+  margin-right: 5px;
+  fill: var(--green);
+}
+.download_category ul li a {
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #464646;
+}
+.category_downloads {
+  box-shadow: 0px 0px 8px -2px #989898;
+}
+.category_downloads_title {
+  background: var(--blue);
+  padding: 5px 10px;
+  margin: 0;
+  color: #fff;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.category_downloads_item {
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #bbb;
+}
+.category_downloads_item:nth-child(even) {
+  background: #f7f7f7;
+}
+.category_downloads_item:nth-child(odd) {
+  background: #ececec;
+}
+.category_downloads_item img {
+  width: 35px;
+  margin-right: 10px;
+  align-self: flex-start;
+}
+.category_downloads_item h5 {
+  margin: 0;
+}
+
+.left_add_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ececec;
+  height: 120px;
+}
+/* === END HERE === */
+
+/* ABOUT US CSS */
+.about_us {
+  background: #fff;
+  padding: 30px;
+}
+.about_us h2 {
+  color: #383838;
+}
+.about_us_content ul {
+  margin: 20px 0px;
+}
+.about_us_content ul li {
+  margin: 10px 0px;
+}
+.about_us_content ul:first-child li:last-child,
+.about_us_content ul:nth-child(2) li,
+.about_us_content ul:nth-child(3) li:last-child {
+  margin-left: 30px;
+}
+.about_us_content ul:nth-child(2) li:first-child {
+  margin: 0;
+}
+/* === END HERE === */
+
+/* CONTACT US CSS */
+
+.contact_us {
+  background: #fff;
+  padding: 30px;
+}
+.contact_us h2 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+}
+.contact_details {
+  padding: 0px 50px;
+}
+
+/* === END HERE === */
+
+/* ADVERTISE WITH US CSS */
+
+.advertise_us {
+  background: #fff;
+  padding: 30px;
+}
+.advertise_us h2 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+}
+.advertise_details {
+  padding: 0px 50px;
+}
+
+/* === END HERE === */

@@ -686,3 +686,31 @@ footer {
 }
 
 /* === END HERE === */
+
+/* TECH NEWS CSS */
+
+.tech_news {
+  background: #fff;
+  padding: 20px;
+}
+.latest_news_box {
+  display: flex;
+}
+.latest_news_box img {
+  margin-right: 20px;
+}
+
+.latest_news_details {
+  background: #fff;
+  padding: 30px 20px;
+}
+.latest_news_details .news_title {
+  margin-top: 0;
+  text-align: center;
+}
+.latest_news_details h1,
+.latest_news_details p {
+  margin: 20px 0px;
+}
+
+/* === END HERE === */

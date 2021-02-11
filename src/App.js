@@ -11,6 +11,8 @@ import About from "./components/pages/About";
 import DownloadList from "./components/pages/DownloadList";
 import Contact from "./components/pages/Contact";
 import AdvertiseWithUs from "./components/pages/AdvertiseWithUs";
+import TechNews from "./components/pages/TechNews";
+import LatestNews from "./components/pages/LatestNews";
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
                 path="/advertise-with-us"
                 component={AdvertiseWithUs}
               />
+              <Route exact path="/tech-news" component={TechNews} />
+              <Route exact path="/tech-news/:newsitle" component={LatestNews} />
               <Route exact path="/about" component={About} />
               <Route exact path="/contact" component={Contact} />
             </Switch>

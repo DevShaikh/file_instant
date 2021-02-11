@@ -33,7 +33,7 @@ const Navbar = () => {
                   <Link to="/widget">website widget</Link>
                 </li>
                 <li>
-                  <Link to="#">Tech news</Link>
+                  <Link to="/tech-news">Tech news</Link>
                 </li>
                 <li>
                   <Link to="/contact">Contact us</Link>

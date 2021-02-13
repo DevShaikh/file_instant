@@ -18,7 +18,7 @@ const Contact = () => {
       <h2>Contact Us</h2>
       <div className="contact_details">
         <div className="row">
-          <div className="col-8 mt-4">
+          <div className="col-lg-8 col-md-12 mt-4">
             <p>
               You can use this contact form to send us feedback about
               FileInstant website. We are waiting for your thoughts or
@@ -32,10 +32,10 @@ const Contact = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-7">
+          <div className="col-lg-7 col-md-12">
             <form className="mt-4">
               <div className="row mb-2">
-                <div className="col">
+                <div className="col-lg-6 col-md-6">
                   <div className="form-group">
                     <label htmlFor="contact_fName">First name:</label>
                     <input
@@ -50,7 +50,7 @@ const Contact = () => {
                     />
                   </div>
                 </div>
-                <div className="col">
+                <div className="col-lg-6 col-md-6">
                   <div className="form-group">
                     <label htmlFor="contact_lName">Last name:</label>
                     <input
@@ -133,8 +133,8 @@ const Contact = () => {
               </div>
             </form>
           </div>
-          <div className="col-5">
-            <div className="d-flex align-items-center h-100">
+          <div className="col-lg-5 col-md-12">
+            <div className="d-flex align-items-center contact_img">
               <img
                 src="./contact.svg"
                 className="img-fluid"

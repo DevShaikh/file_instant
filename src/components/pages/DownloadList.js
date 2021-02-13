@@ -78,7 +78,7 @@ const DownloadList = () => {
   return (
     <div className="download_list">
       <div className="row mb-5">
-        <div className="col-3">
+        <div className="col-lg-3 col-md-3">
           <div className="row mb-5">
             <div className="col-12">
               <div className="download_category">
@@ -94,7 +94,7 @@ const DownloadList = () => {
               </div>
             </div>
           </div>
-          <div className="row mb-5">
+          <div className="row mb-5 left-right-add">
             <div className="col-12">
               <div class="addvertisement">
                 <h4 class="bg-secondary text-light text-center">Advertise</h4>
@@ -102,13 +102,13 @@ const DownloadList = () => {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row left-right-add">
             <div className="col-8 mx-auto">
               <div className="left_add_box">120 x 120</div>
             </div>
           </div>
         </div>
-        <div className="col-9">
+        <div className="col-lg-9 col-md-9">
           <div className="category_downloads">
             <h5 className="category_downloads_title">Web Browsers Downloads</h5>
             {allVersions.map((item, key) => (

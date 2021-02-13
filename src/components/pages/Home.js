@@ -17,47 +17,45 @@ const Home = () => {
   return (
     <section id="home_page">
       <div className="row">
-        <div className="col-10">
+        <div className="col-xl-10 col-lg-10 col-md-8">
           <div className="softwares_main">
             <div className="latest_softwares">
               <div className="row">
-                <div className="col-6">
+                <div className="col-xl-6 col-lg-6 col-md-12">
                   <LatestSofts title={softwareBoxTitles[0]} />
                 </div>
-                <div className="col-6">
+                <div className="col-xl-6 col-lg-6 col-md-12">
                   <LatestSofts title={softwareBoxTitles[1]} />
                 </div>
               </div>
             </div>
             <div className="softwares">
               <div className="row">
-                <div className="col-4">
+                <div className="col-xl-4 col-lg-6 col-md-12 mb-md-2">
                   <Softwares
                     title_yellow={false}
                     title={softwareBoxTitles[2]}
                   />
                 </div>
-                <div className="col-4">
+                <div className="col-xl-4 col-lg-6 col-md-12 mb-md-2">
                   <Softwares title_yellow={true} title={softwareBoxTitles[3]} />
                 </div>
-                <div className="col-4">
+                <div className="col-xl-4 col-lg-6 col-md-12 mb-md-2">
                   <Softwares
                     title_yellow={false}
                     title={softwareBoxTitles[4]}
                   />
                 </div>
-              </div>
-              <div className="row mt-4">
-                <div className="col-4">
+                <div className="col-xl-4 col-lg-6 col-md-12 mb-md-2">
                   <Softwares
                     title_yellow={false}
                     title={softwareBoxTitles[5]}
                   />
                 </div>
-                <div className="col-4">
+                <div className="col-xl-4 col-lg-6 col-md-12 mb-md-2">
                   <Softwares title_yellow={true} title={softwareBoxTitles[6]} />
                 </div>
-                <div className="col-4">
+                <div className="col-xl-4 col-lg-6 col-md-12 mb-md-2">
                   <Softwares
                     title_yellow={false}
                     title={softwareBoxTitles[7]}
@@ -76,7 +74,7 @@ const Home = () => {
         </div>
 
         {/* ADVERTISEMENT */}
-        <div className="col-2">
+        <div className="col-lg-2 col-md-4" id="add_right_home">
           <div className="row">
             <div className="col-12">
               <div className="addvertisement">

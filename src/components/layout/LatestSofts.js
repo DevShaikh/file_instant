@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const LatestSofts = ({ title }) => {
   return (
-    <div className="lates_box">
+    <div className="latest_box mb-md-4 mb-sm-4">
       <div className="latest_title">
         <h5>{title}</h5>
         <div className="latest-content">

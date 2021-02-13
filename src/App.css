@@ -417,6 +417,9 @@ footer {
 .download_title_desc > * {
   margin: 0;
 }
+.download_content {
+  display: initial;
+}
 .download_menu {
   background: var(--yellow);
   border-radius: 5px 5px 0px 0px;
@@ -426,11 +429,13 @@ footer {
   justify-content: space-between;
   padding: 15px 10px;
   padding-bottom: 0;
+  flex-direction: row;
 }
 .download_menu ul li {
   cursor: pointer;
   padding: 10px 8px;
   border-radius: 5px 5px 0px 0px;
+  display: inline;
 }
 .download_menu .download_active {
   background: #fff;
@@ -490,6 +495,9 @@ footer {
 .downloadWait {
   padding: 15px;
   background: #ffffff;
+}
+.download_loader_title {
+  display: flex;
 }
 .download_loader {
   display: flex;
@@ -714,3 +722,118 @@ footer {
 }
 
 /* === END HERE === */
+
+/* MEDIA QUERIES CSS */
+/* ================= */
+
+/* MAX WIDTH 992px */
+
+/* === END HERE === */
+
+@media only screen and (max-width: 992px) {
+  .searchBar {
+    margin: 10px auto;
+  }
+  .latest-content ul li {
+    font-size: 15px;
+  }
+  .contact_img {
+    margin: 20px 0px;
+  }
+  .widget_preview {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #add_right_home {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .contact_img {
+    margin: 20px 0px;
+  }
+  .left-right-add {
+    display: none;
+  }
+  .advertise_details {
+    padding: 0;
+  }
+  .download_title img {
+    width: 8%;
+  }
+  .download_menu ul {
+    flex-flow: column;
+  }
+  .download_menu ul li {
+    font-size: 15px;
+  }
+  .download_content {
+    margin-bottom: 20px;
+    display: flex;
+  }
+  .download_technical {
+    overflow-x: scroll;
+  }
+  .download_loader {
+    flex-direction: column;
+  }
+  .download_loading_bar {
+    margin-top: 10px;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .menu ul {
+    flex-direction: column;
+  }
+  #add_right_home {
+    display: none;
+  }
+  .latest_box:first-child {
+    margin-bottom: 25px;
+  }
+  .softwareBox {
+    margin-bottom: 30px;
+  }
+  .footer-menu {
+    display: none;
+  }
+  .latest_news_box {
+    flex-direction: column;
+    margin: 20px 0px;
+  }
+  .download_title img {
+    width: 10%;
+  }
+  .category_downloads_item {
+    margin-bottom: 20px;
+  }
+  .category_downloads_item:last-child {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .softwareBox {
+    margin-bottom: 30px;
+  }
+  .latest-content ul li {
+    font-size: 12px;
+  }
+  .download_title img {
+    width: 14%;
+  }
+  .download_loader h1 {
+    font-size: 18px;
+    align-self: center;
+  }
+  .download_loading_bar {
+    margin-top: 10px;
+    width: 60%;
+    height: 20px;
+  }
+}
+
+/* === END HERE === */
+/* ================ */

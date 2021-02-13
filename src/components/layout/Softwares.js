@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Softwares = ({ title_yellow, title }) => {
   return (
-    <div className="softwareBox">
+    <div className="softwareBox mb-sm-4">
       <h5
         className={title_yellow ? "software_title bg_yellow" : "software_title"}
       >

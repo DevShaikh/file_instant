@@ -5,10 +5,10 @@ import WidgetPreview from "../widget/WidgetPreview";
 
 const Widget = () => {
   return (
-    <section id='widget'>
-      <div className='row'>
-        <div className='col-12'>
-          <div className='widget_title'>
+    <section id="widget">
+      <div className="row">
+        <div className="col-lg-12">
+          <div className="widget_title">
             <h4>Widget - Create your own!</h4>
             <p>
               Add the filehippo widget to your website, so your visitors can
@@ -19,16 +19,16 @@ const Widget = () => {
           </div>
         </div>
       </div>
-      <div className='row'>
-        <div className='col-6'>
+      <div className="row">
+        <div className="col-lg-6 col-md-12">
           <WidgetContent />
         </div>
-        <div className='col-6'>
+        <div className="col-lg-6 col-md-12">
           <WidgetPreview />
         </div>
       </div>
-      <div className='row'>
-        <div className='col-12'>
+      <div className="row">
+        <div className="col-12">
           <WidgetCode />
         </div>
       </div>

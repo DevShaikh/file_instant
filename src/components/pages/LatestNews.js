@@ -1,4 +1,5 @@
 import React from "react";
+import DownloadShare from "../download/DownloadShare";
 
 const LatestNews = () => {
   return (
@@ -16,7 +17,19 @@ const LatestNews = () => {
             suffers from so not-so-great features that might make it not worth
             paying to own it.
           </p>
-          <h1>Free trial</h1>
+          <h1>Free Trial</h1>
+          <p>
+            Like many apps, WikiCamps comes with a 14-day free trial. After
+            that, it costs a one-time payment of $1.99 for lifetime access. The
+            free trial period is well worth it because you can try out different
+            destinations to see just how well it will work for you. Many users
+            report a lack of data on local attractions and campsites, while our
+            tests were data rich, so it might just depend on where you’re
+            looking. It seems WikiCamps has a strong following in Australia, so
+            the crowd-sourced information it relies on might just take some time
+            to fill in around the rest of the world.
+          </p>
+          <h1>Smart Features</h1>
           <p>
             Beyond the actual data it contains (or doesn’t contain), WikiCamps
             has a wealth of smart features. Tap the hamburger button in the
@@ -55,7 +68,25 @@ const LatestNews = () => {
             the crowd-sourced information it relies on might just take some time
             to fill in around the rest of the world.
           </p>
-          <h1>Smart Features</h1>
+          <h1>Trip Planning</h1>
+          <p>
+            While the app offers a trip-planning function, we found it difficult
+            and confusing to use. You can search on your destination, but there
+            seems to be no easy way to indicate that you want to add it as the
+            end point in your trip. Instead, you can try to build a trip by
+            tapping on sites and tapping “Add To Planner,” but it’s a cumbersome
+            way to go about things.
+          </p>
+          <h1>Worth A Try?</h1>
+          <p>
+            Because WikiTrips is built by the community, it can be hit or miss
+            in terms of the information it provides. Some spots have lots of
+            entries, while others are fairly bare. And the Trip Planner doesn’t
+            seem to have much utility. But, for just $1.99 it might be a
+            worthwhile tool to add to a frequent-camper’s resources, and it’s
+            certainly worth taking the two-week free trial out for a spin.
+          </p>
+          <DownloadShare border="none" />
         </div>
       </div>
     </div>

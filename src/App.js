@@ -1,8 +1,8 @@
-import Navbar from "./components/layout/Navbar";
-import Home from "./components/pages/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
-import Footer from "./components/layout/Footer";
+import Navbar from "./components/layout/navbar/Navbar";
+import Home from "./components/pages/Home";
+import Footer from "./components/layout/footer/Footer";
 import Widget from "./components/pages/Widget";
 import Download from "./components/pages/Download";
 import WidgetState from "./context/fileinstant/widget/WidgetState";

@@ -10,7 +10,7 @@
   padding: 0;
 }
 body {
-  background-image: url("./back-texture.jpg");
+  background-image: url("back-texture.jpg");
 }
 
 ul {
@@ -27,6 +27,50 @@ a {
   background: #ffd400;
   color: #000;
 }
+/* === END HERE === */
+
+/* TOGGLE MENU CSS */
+.navToggleBtn {
+  fill: #fff;
+  align-self: center;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+.sideMenu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  background: var(--blue);
+  width: 100%;
+  height: 100vh;
+  padding: 0px 40px;
+  padding-top: 20px;
+  transition: 500ms;
+  z-index: 99;
+  overflow: hidden;
+}
+
+.sideMenu-active {
+  left: 0 !important;
+}
+.sideMenu ul li {
+  line-height: 3;
+  border-bottom: 2px solid #bbb;
+}
+
+.sideMenu ul li a {
+  color: #fff;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+.sideMenu ul li a svg {
+  margin-right: 5px;
+  fill: #fff;
+}
+
 /* === END HERE === */
 
 /* NAVBAR CSS */
@@ -748,6 +792,9 @@ footer {
   #add_right_home {
     display: none;
   }
+  .navToggleBtn {
+    display: inline-block;
+  }
   .menu {
     display: none;
   }
@@ -821,6 +868,9 @@ footer {
   .latest-content ul li {
     font-size: 12px;
   }
+  .latest-content ul li img {
+    height: 100%;
+  }
   .download_title img {
     width: 14%;
   }
@@ -832,6 +882,9 @@ footer {
     margin-top: 10px;
     width: 60%;
     height: 20px;
+  }
+  .contact_details {
+    padding: 0;
   }
 }
 

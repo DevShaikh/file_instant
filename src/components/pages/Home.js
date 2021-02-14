@@ -1,6 +1,6 @@
 import React from "react";
-import LatestSofts from "../layout/LatestSofts";
-import Softwares from "../layout/Softwares";
+import LatestSofts from "../software/LatestSofts";
+import Softwares from "../software/Softwares";
 
 const Home = () => {
   const softwareBoxTitles = [

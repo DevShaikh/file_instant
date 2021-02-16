@@ -1,2 +1,5 @@
-node_modules/
+/node_modules
 config/config.env
+
+# Admin panel
+admin/node_modules

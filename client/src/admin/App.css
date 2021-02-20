@@ -1,0 +1,17 @@
+/* NAVBAR CSS */
+.navbar {
+  box-shadow: 0px 2px 20px -10px #000;
+}
+.navbar_right .dropdown-toggle::after {
+  display: none;
+}
+.nav_user_dropdown svg {
+  fill: #000;
+}
+/* === END HERE === */
+
+/* ADMIN DASHBOARD CSS */
+.admin_dashboard {
+  background: #fff;
+}
+/* === END HERE === */

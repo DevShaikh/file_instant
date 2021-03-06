@@ -13,16 +13,14 @@ import Col from "react-bootstrap/Col";
 import NavDropdown from "react-bootstrap/NavDropdown";
 // ================================================ //
 
-const Navbar = () => {
+const Navbar = ({ navTitle }) => {
   return (
     <div className="navbar">
       <Container fluid>
         <Row className="w-100">
           <Col lg={12}>
             <div className="d-flex justify-content-between">
-              <div className="nav_logo">
-                <h2>FileInstant</h2>
-              </div>
+              <h3>{navTitle}</h3>
               <div className="navbar_right">
                 <NavDropdown
                   title={<FaUserAlt />}

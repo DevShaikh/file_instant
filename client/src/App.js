@@ -21,6 +21,13 @@ import LatestNews from "./components/pages/LatestNews";
 
 // IMPORT ADMIN PANEL COMPONENTS
 import Dashboard from "./admin/pages/Dashboard";
+import HomeManagement from "./admin/pages/HomeManagement";
+import SoftwaresCategories from "./admin/pages/SoftwaresCategories";
+import SoftwaresManagement from "./admin/pages/SoftwaresManagement";
+import InfoPages from "./admin/pages/InfoPages";
+import DetailStatics from "./admin/pages/DetailStatics";
+import StaffManagement from "./admin/pages/StaffManagement";
+import AlertsAndNotifications from "./admin/pages/AlertsAndNotifications";
 
 function App() {
   return (
@@ -45,7 +52,43 @@ function App() {
             <Route exact path="/contact" component={Contact} />
 
             {/* ADMIN PANEL ROUTES */}
-            <Route exact path="/admin" component={Dashboard} />
+            <Route
+              exact
+              path="/admin"
+              component={() => (window.location.href = "/admin/dashboard")}
+            />
+            <Route exact path="/admin/dashboard" component={Dashboard} />
+            <Route
+              exact
+              path="/admin/home-management"
+              component={HomeManagement}
+            />
+            <Route
+              exact
+              path="/admin/softwares-categories"
+              component={SoftwaresCategories}
+            />
+            <Route
+              exact
+              path="/admin/softwares-management"
+              component={SoftwaresManagement}
+            />
+            <Route exact path="/admin/info-pages" component={InfoPages} />
+            <Route
+              exact
+              path="/admin/detail-statics"
+              component={DetailStatics}
+            />
+            <Route
+              exact
+              path="/admin/staff-management"
+              component={StaffManagement}
+            />
+            <Route
+              exact
+              path="/admin/alerts-and-notifications"
+              component={AlertsAndNotifications}
+            />
           </Switch>
         </div>
       </Router>

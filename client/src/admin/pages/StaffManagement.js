@@ -10,9 +10,10 @@ import Col from "react-bootstrap/esm/Col";
 
 // importing SIDEBAR LINKS
 import { Sidebar } from "../components/sidebar/Sidebar";
-import LineChart from "../components/dashboard/LineChart";
+import AddOrUpdateStaffForm from "../components/staff/AddOrUpdateStaffForm";
+import StaffsTable from "../components/staff/StaffsTable";
 
-const Dashboard = () => {
+const DetailStatics = () => {
   return (
     <div className="admin_main">
       <Container fluid>
@@ -21,11 +22,18 @@ const Dashboard = () => {
             <Sidebar activeClass="sidePanelActive" />
           </Col>
           <Col lg={10} className="p-0">
-            <Navbar navTitle="Dashboard" />
-            <div id="admin_dashboard">
-              <div className="row mb-5">
-                <LineChart />
-              </div>
+            <Navbar navTitle="Staff Management" />
+            <div id="admin_staff_management">
+              <Row>
+                <Col lg={12}>
+                  <StaffsTable />
+                </Col>
+              </Row>
+              <Row>
+                <Col lg={12}>
+                  <AddOrUpdateStaffForm />
+                </Col>
+              </Row>
             </div>
           </Col>
         </Row>
@@ -34,4 +42,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default DetailStatics;

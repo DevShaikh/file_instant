@@ -10,9 +10,9 @@ import Col from "react-bootstrap/esm/Col";
 
 // importing SIDEBAR LINKS
 import { Sidebar } from "../components/sidebar/Sidebar";
-import LineChart from "../components/dashboard/LineChart";
+import AddAndUpdateSoftware from "../components/softwares/AddAndUpdateSoftware";
 
-const Dashboard = () => {
+const SoftwareCategories = () => {
   return (
     <div className="admin_main">
       <Container fluid>
@@ -21,10 +21,10 @@ const Dashboard = () => {
             <Sidebar activeClass="sidePanelActive" />
           </Col>
           <Col lg={10} className="p-0">
-            <Navbar navTitle="Dashboard" />
-            <div id="admin_dashboard">
-              <div className="row mb-5">
-                <LineChart />
+            <Navbar navTitle="Software Management" />
+            <div id="admin_softwares_management">
+              <div className="row">
+                <AddAndUpdateSoftware />
               </div>
             </div>
           </Col>
@@ -34,4 +34,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default SoftwareCategories;

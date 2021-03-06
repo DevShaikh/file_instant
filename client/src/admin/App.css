@@ -1,17 +1,165 @@
+:root {
+  --blue: #0d6efd;
+  --light: #eeeeee;
+  --yellow: #ffd400;
+  --orange: #ff7c00;
+  --green: rgb(25, 184, 25);
+}
+
+td {
+  vertical-align: middle !important;
+}
+
 /* NAVBAR CSS */
-.navbar {
-  box-shadow: 0px 2px 20px -10px #000;
+
+.navbar::before {
+  content: "";
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(180deg, #00000040, transparent);
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .navbar_right .dropdown-toggle::after {
   display: none;
 }
 .nav_user_dropdown svg {
-  fill: #000;
+  fill: var(--blue);
+}
+/* === END HERE === */
+
+/* ADMIN PANEL CSS */
+.admin_main {
+  background: #fff;
+}
+/* === END HERE === */
+
+/* ADMIN Sidebar CSS */
+.admin_sidebar {
+  height: 100%;
+  padding: 15px 10px;
+  box-shadow: 2px 0px 6px 0px #0000005c;
+  position: fixed;
+  z-index: 99;
+  width: 17%;
+  background: #fff;
+}
+
+.admin_sidebar ul {
+  margin: 0;
+}
+.admin_sidebar ul li a {
+  color: #000000d4;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 2px 0px;
+  padding: 10px 10px;
+  position: relative;
+  transition: 0.3s;
+  display: block;
+}
+.admin_sidebar ul li a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--blue);
+  transition: 500ms;
+}
+.admin_sidebar ul li a:hover {
+  color: #000;
+  background: rgba(0, 0, 0, 0.131);
+}
+.admin_sidebar ul li a:hover::after {
+  width: 4px;
+}
+.admin_sidebar ul li .sidePanelActive {
+  background: rgba(0, 0, 0, 0.131);
+}
+.admin_sidebar ul li .sidePanelActive::after {
+  width: 4px;
 }
 /* === END HERE === */
 
 /* ADMIN DASHBOARD CSS */
-.admin_dashboard {
+#admin_dashboard {
+  padding: 15px 40px;
+}
+/* === END HERE === */
+
+/* ADMIN HOME MANAGEMENT CSS */
+#admin_home_management {
+  padding: 15px 30px;
+}
+.admin_latest_softwares tr th:first-child,
+.admin_latest_softwares tr td:first-child {
+  text-align: center;
+}
+
+.admin_popular_softwares tr th:first-child,
+.admin_popular_softwares tr td:first-child {
+  text-align: center;
+}
+
+.admin_all_softwares tr th:first-child,
+.admin_all_softwares tr td:first-child {
+  text-align: center;
+}
+/* === END HERE === */
+
+/* ADMIN SOFTWARES CATEGORIES CSS */
+#admin_softwares_categories {
+  padding: 15px 40px;
+  height: 100%;
   background: #fff;
+}
+.admin_software_categories tr th:first-child {
+  text-align: center;
+}
+.admin_software_categories tr td:first-child {
+  text-align: center;
+}
+/* === END HERE === */
+
+/* ADMIN SOFTWARES MANAGEMENT CSS */
+#admin_softwares_management {
+  padding: 15px 40px;
+  height: 100%;
+  background: #fff;
+}
+/* === END HERE === */
+
+/* ADMIN INFO PAGES CSS */
+#admin_info_pages {
+  padding: 15px 40px;
+}
+/* === END HERE === */
+
+/* ADMIN DETAIL STATICS CSS */
+#admin_detail_statics {
+  padding: 15px 40px;
+}
+/* === END HERE === */
+
+/* ADMIN STAFF MANAGEMENT CSS */
+#admin_staff_management {
+  padding: 15px 40px;
+}
+.staff_table th:first-child {
+  text-align: center;
+}
+.staff_table tr td:first-child {
+  text-align: center;
+}
+/* === END HERE === */
+
+/* ADMIN ALERTS AND NOTIFICATION CSS */
+#admin_alerts_and_notifications {
+  padding: 15px 40px;
 }
 /* === END HERE === */
